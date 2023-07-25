@@ -1,0 +1,27 @@
+.sidebar{
+    gap: var(--gap);
+    min-width: min-content;
+    flex: .2;
+}
+
+.sidebar__profile{
+    overflow: hidden;
+    border-radius: 25px;
+}
+.sidebar__top{
+    padding-top: 0;
+    border-bottom: var(--border);
+}
+
+.sidebar__avatar{
+    aspect-ratio: 1/1;
+    width: 33% !important;
+    height: 33% !important;
+    margin-top: calc(-33%/2) !important;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.sidebar__email{
+    font-size: .75rem;
+}

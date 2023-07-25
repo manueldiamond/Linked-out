@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  font-family: sans-serif;
+}
+p{
+  font-size: .9rem;
+}
+h4{
+  font-size: 1.1rem;
+}
+.heading{
+  font-weight: 900;
+}
+:root{
+  --bg-light:#F3F2EF;
+  --bg-card: #FFF;
+  --accent: #0A66C2;
+  --text-black: black;
+  --text-gray: gray;
+  --card-radius: 15px;
+  --border: .1px solid lightgray;
+  
+}
+/* //GGENENRAl */
+.fill{
+  flex:1;
+}
+.w-full,.full{
+  width: 100%;
+}
+.h-full,.full{
+  height: 100%;
+}
+.flex,.flex-col,.jc-space,.jc-center,.items-center{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+
+.jc-space{
+  justify-content: space-between;
+}
+.jc-center,.center{
+  justify-content: center;
+}
+.items-center,.center{
+  align-items: center;
+}
+.bg-light{
+  background-color: var(--bg-light);
+}
+.bg-card,.card{
+  background-color: var(--bg-card);
+}
+.px,.pad{
+  padding-inline: 1rem;
+}
+.py,.pad{
+  padding-block: 1rem;
+}
+.card{
+  border: var(--border);
+}
+.rounded,.card{
+  border-radius: var(--card-radius)
+}
+.dim{
+  color:var(--text-gray)
+}
+.center{
+  margin: auto auto;
+  text-align: center;
+}
+.head-text{
+  color: var(--text-black);
+}
+.accent{
+  color: var(--accent);
+}
