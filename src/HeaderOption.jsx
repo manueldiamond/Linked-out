@@ -3,10 +3,10 @@ import './HeaderOptions.css'
 import { Avatar } from '@mui/material'
 const HeaderOption = ({ avatar,Icon,title }) => {
   return (
-    <div className='headerOption'>
+    <div className='headerOption jc-center '>
         {Icon&&<Icon className='headerOption__icon' />}
         {avatar&&<Avatar className="headerOption__icon" src={avatar} />}
-        <h3 className='headerOption__title'>{title}</h3>
+        <h3 className='headerOption__title '>{title}</h3>
     </div>
   )
 }

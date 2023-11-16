@@ -1,6 +1,6 @@
 import './Credits.css'
 
-const Credits = props => {
+const Credits = () => {
   return (
     <div className='credits'>
         <h3>CREDITz</h3>

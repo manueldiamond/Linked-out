@@ -1,0 +1,9 @@
+.inputOption{
+    gap:.5rem;
+    border-radius:.3rem;
+    cursor:pointer;
+    transition: background .2s;
+}
+.inputOption:hover{
+    background-color: var(--border-color);
+}

@@ -1,0 +1,27 @@
+.feed{
+    flex:.6;
+    gap:.5rem;
+}
+.feed__inputHeader{
+    gap:.5rem;
+}
+.feed__inputHeader .avatar{
+    height:3rem;
+    width: 3rem;
+}
+.feed__inputOptions{
+    margin-bottom: -.5rem;
+    margin-top: .2rem;
+}
+.feed__input{
+   border-radius:999px;
+}
+.feed__input input:focus{
+    outline: none;
+}
+.feed__input input{
+    border: none;
+}
+.feed__input button{
+    display: none;
+}

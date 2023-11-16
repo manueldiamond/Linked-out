@@ -1,7 +1,8 @@
-import React from 'react'
+
 import Header from './Header'
 import Credits from './Credits'
 import Sidebar from './Sidebar'
+import Feed from './Feed'
 import './App.css'
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       
       <div className='app__body'>
         <Sidebar />
+        <Feed />
       </div>
 
       <Credits />

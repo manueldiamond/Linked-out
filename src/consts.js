@@ -12,15 +12,11 @@ const profile={
     additionalName:"Kwarteng",
     lastName:"Ashong",
     profilePhoto:"",
+    headline:"React/Javascript Developer",
     email:"manueldiamondlistowell@gmail.com",
-    connections:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
-    stats:{
-        "Connections": 1281,
-        "Profile Views": 2545,
-        "Views on post": 2444,
-        
-    }
+    connections:981, 
 }
+
 export {
     headerOptions,
     profile,

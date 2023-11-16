@@ -5,8 +5,8 @@
     color:gray;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
-    width: 4rem;
+    --margin-right: 15px;
+    width: 4.5rem;
 }
 .headerOption:hover{ 
     color:black;
