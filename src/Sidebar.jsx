@@ -6,8 +6,8 @@ import { useSelector } from 'react-redux'
 import { selectUser } from './features/userSlice'
 const Sidebar = () => {
 
-  const {displayName,photoURL}=useSelector(selectUser)
-  const headline="React Developer"
+  const {displayName,photoURL,email}=useSelector(selectUser)
+  const headline=email
   const connections=100
   const invitations=21
   return (
