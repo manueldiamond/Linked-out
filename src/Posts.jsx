@@ -1,7 +1,10 @@
+/* eslint-disable react/display-name */
+/* eslint-disable react/prop-types */
 import { Avatar } from '@mui/material'
 import './posts.css'
 import InputOption from './InputOption'
 import { CommentOutlined, SendOutlined, ShareOutlined, ThumbUpOutlined } from '@mui/icons-material'
+import { forwardRef } from 'react'
 
 const engagementOptions=[
     {
@@ -9,7 +12,7 @@ const engagementOptions=[
         Icon:ThumbUpOutlined,
         color:"gray",
     },{
-        title:"Like",
+        title:"Comment",
         Icon:CommentOutlined,
         color:"gray",
     }, {
@@ -18,16 +21,18 @@ const engagementOptions=[
         color:"gray",
     },
     {
-        title:"Like",
+        title:"Send",
         Icon:SendOutlined,
         color:"gray",
     }
 ]
-const Posts = ({name,desc,message,photoUrl}) => {
+const Posts = forwardRef(({name,photoURL,desc,message},ref) => {
   return (
-    <div className='Posts card pad'>
+    <div ref={ref} className='Posts card pad'>
         <div className="post__header flex items-center">
-            <Avatar src={photoUrl}/>
+            <Avatar src={photoURL}>
+                {name[0]}
+            </Avatar>
             <div className='post__info px'>
                 <h1 className='heading'>{name}</h1>
                 <p className='dim'>{desc}</p>
@@ -42,6 +47,6 @@ const Posts = ({name,desc,message,photoUrl}) => {
         </div>
     </div>
   )
-}
+})
 
 export default Posts

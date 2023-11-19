@@ -1,9 +1,9 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import './HeaderOptions.css'
 import { Avatar } from '@mui/material'
-const HeaderOption = ({ avatar,Icon,title }) => {
+const HeaderOption = ({onClick,avatar,Icon,title }) => {
   return (
-    <div className='headerOption jc-center '>
+    <div onClick={()=>onClick(title)} className='headerOption jc-center '>
         {Icon&&<Icon className='headerOption__icon' />}
         {avatar&&<Avatar className="headerOption__icon" src={avatar} />}
         <h3 className='headerOption__title '>{title}</h3>

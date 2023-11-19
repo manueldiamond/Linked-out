@@ -1,0 +1,13 @@
+.widgets{
+    flex:.2;
+    height: max-content;
+}
+.articles{
+    gap:1rem;
+}
+.article{
+    cursor: pointer;
+}
+article:hover{
+    color: var(--accent-dark);
+}

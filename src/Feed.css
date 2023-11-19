@@ -2,6 +2,11 @@
     flex:.6;
     gap:.5rem;
 }
+.posts{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem
+}
 .feed__inputHeader{
     gap:.5rem;
 }
@@ -13,13 +18,22 @@
     margin-bottom: -.5rem;
     margin-top: .2rem;
 }
+
+
 .feed__input{
    border-radius:999px;
+   animation: none;
+   background-image: none;
+}
+
+.feed__input:hover{
+    background-color: rgb(238, 238, 238);
 }
 .feed__input input:focus{
     outline: none;
 }
 .feed__input input{
+    background: none;
     border: none;
 }
 .feed__input button{

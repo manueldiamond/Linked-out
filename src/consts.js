@@ -5,21 +5,16 @@ const headerOptions=[
     headerOption(SupervisorAccount,"My Network"),
     headerOption(BusinessCenter,"Jobs"),
     headerOption(Chat,"Messages"),
-    headerOption(Notifications,"Notifications")
+    headerOption(Notifications,"Notifications"),
+    {
+        avatar:"src/assets/man_2202112.png",
+        title:"Me" 
+    }
 ]
-const profile={
-    firstName:"Manuel",
-    additionalName:"Kwarteng",
-    lastName:"Ashong",
-    profilePhoto:"",
-    headline:"React/Javascript Developer",
-    email:"manueldiamondlistowell@gmail.com",
-    connections:981, 
-}
 
 export {
     headerOptions,
-    profile,
+    
 }
 
 function headerOption(Icon,title) {

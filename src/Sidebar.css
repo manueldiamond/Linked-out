@@ -48,6 +48,6 @@
     width: 33% !important;
     height: 33% !important;
     margin-top: calc(-33%/2) !important;
-    border: 1px solid;
+    border: white 2px solid;
     cursor: pointer;
 }

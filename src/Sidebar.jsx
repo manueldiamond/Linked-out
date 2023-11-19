@@ -1,9 +1,13 @@
 import { Avatar } from '@mui/material'
 
 import './Sidebar.css'
-import { profile } from './consts'
 import { Add, Bookmark, ChevronRight } from '@mui/icons-material'
+import { useSelector } from 'react-redux'
+import { selectUser } from './features/userSlice'
 const Sidebar = () => {
+
+  const {displayName,photoURL}=useSelector(selectUser)
+  const headline="React Developer"
   const connections=100
   const invitations=21
   return (
@@ -12,10 +16,12 @@ const Sidebar = () => {
         <img className='w-full sidebar__profile-bg' src="https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="" />
         
         <div className="sidebar__top flex-col">
-          <Avatar onClick={()=>{}} className='sidebar__avatar center' src={profile.img} />
-          <div className='pad'>
-            <h4 className='heading'>{`${profile.firstName} ${profile.lastName}`}</h4>
-            <p className='headline dim w-full'>{profile.headline}</p>
+          <Avatar onClick={()=>{}} className='sidebar__avatar center' src={photoURL}>
+            {displayName&&displayName[0]}
+          </Avatar>
+          <div className='pad center'>
+            <h4 className='heading'>{`${displayName}`}</h4>
+            <p className='headline dim w-full'>{headline}</p>
           </div>
         </div>
         <div className='profile__section network border-top heading py text-left'>

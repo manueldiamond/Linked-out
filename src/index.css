@@ -16,12 +16,28 @@ h4{
   --bg-light:#F3F3EF;
   --bg-card: #FFF;
   --accent: #0A66C2;
+  --accent-dark:rgb(1, 37, 78);
   --text-black: black;
   --text-gray: rgb(100, 100, 100);
   --card-radius: .7rem;
   --border-color:rgb(218, 218, 218);
   --border: .1px solid var(--border-color);
 }
+
+@keyframes white-shine{
+  from{
+      background-position-x:-40%;
+  }
+  to{
+      background-position-x:150%;
+  }
+}
+.loading{
+  background-size: 300% ;
+  background-image: linear-gradient(90deg,rgb(238, 238, 238), white,rgb(238, 238, 238));
+  animation: white-shine 1s forwards infinite
+}
+
 /* //GGENENRAl */
 .fill ,.flex-1{
   flex:1;

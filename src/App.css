@@ -3,3 +3,7 @@
     gap: 1rem;
     padding: 1rem;
 }
+.app{
+    min-height: 100vh;
+    padding-bottom: 10rem;
+}
